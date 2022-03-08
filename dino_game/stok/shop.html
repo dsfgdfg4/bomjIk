@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shop.css">
+    <script src="shop.js" async></script>
+</head>
+<body>
+    <div class="tab_menu_es">
+        <button onclick="menu_button()" class="menu_button">Меню</button>
+        <div class="dengi_tab">
+            <div class="dengi"></div>
+            <p id="dengi_text" class="dengi_text">Бабки в кармане: </p>    
+        </div>
+        <div class="vodka_tab">
+            <div class="vodka"></div>
+            <p id="vodka_text" class="vodka_text">Опьянение: </p>
+        </div>
+    </div>
+    <div class="infa_bomja">
+        <div class="infa">
+            <div class="ava_bomja"></div>
+            <p class="name_text">Евграфий<br>Евдакиевич</p>
+            <button onclick="polnInfo()" class="podrob_infa">Посмотреть</button>
+        </div>
+    </div>
+    <div class="polki_polki">
+        <div class="polki">
+            <div class="polka_pivo"></div>
+            <div onclick="opianNon()" onmouseout="pivoInfo_out()" onmouseover="pivoInfo()" class="pivo"></div>
+            <div id="stoim_pivo" class="stoim_pivo">100р</div>
+            <div id="infa_pivo" class="infa_pivo">Пиво убирает эффект опьянения с бомжа, + высокий прыжок</div>
+        </div>
+        <div class="polki2">
+            
+        </div>
+    </div>
+    <div class="pup_menu" id="pup_menu">
+        <div id="tab_pup" class="tab_pup">
+            <div onclick="exit()" class="exit">закрыть</div>
+            <div class="name_ava">
+                <div class="ava"></div>
+                <p class="name_pup">Евграфий Евдакиевич</p>
+            </div>
+            <div class="data_info">
+                <div class="data">Год.рожд</div>
+                <div class="data_text">17.03.1978</div>
+            </div>
+            <div class="addr">
+                <div class="text_addr">Место.жит
+                <div class="addr_text">неуказано</div>
+            </div>
+            <div class="uchoba">
+                <div class="uchilsa">Учился.на </div>
+                <div class="uch">Президента</div>
+            </div>
+            <div class="stal_tab">
+                <div class="stal">Стал</div>
+                <div class="bomjom">Бомжом</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

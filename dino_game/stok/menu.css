@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kelly+Slab&family=Oswald:wght@600&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kelly+Slab&family=Oswald:wght@600&family=Play:wght@400;700&family=Secular+One&family=Teko&display=swap');
+
+
+
+.header{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    border: 1px solid rgb(46, 155, 206);
+    width: 350px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.easy{
+    height: 50px;
+    width: 100px;
+    margin-top: 100px;
+    background-color: white;
+    border: 1px solid rgb(46, 155, 206);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(46, 155, 206);
+}
+
+.easy:hover{
+    background-color: rgb(46, 155, 206);
+    border-color: white;
+    border-bottom-color: rgb(46, 155, 206);
+    color: white;
+}
+
+
+@keyframes hard{
+    0%{
+        background-color: rgb(49, 194, 204);
+    }
+    50%{
+        background-color: rgb(49, 204, 75);
+    }
+    100%{
+        background-color: rgb(49, 194, 204);
+    }
+}
+
+
+.normal{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    margin-top: 200px;
+    background-color: white;
+    border: 1px solid rgb(46, 155, 206);
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(46, 155, 206);
+    transition-duration: 0.5s;
+}
+
+.normal:hover{
+    background-color: rgb(46, 155, 206);
+    border-color: white;
+    border-bottom-color: rgb(46, 155, 206);
+    color: white;
+}
+
+.hard{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    margin-top: 300px;
+    background-color: white;
+    border: 1px solid rgb(46, 155, 206);
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(46, 155, 206);
+    transition-duration: 0.5s
+}
+
+.hard:hover{
+    background-color: rgb(46, 155, 206);
+    border-color: white;
+    border-bottom-color: rgb(46, 155, 206);
+    color: white;
+}
+
+.hard_style{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(46, 155, 206);
+    font-size: 20px;
+}
+
+
+
+.bomj{
+    position: relative;
+    background: url('bomj.png')0 0/100% 100% no-repeat;
+    width: 200px;
+    height: 200px;
+    bottom: 400px;
+    left: 45%;
+    transform: rotate(50deg);
+    animation: bomj_animation 2s ease-out;
+}
+
+
+@keyframes bomj_animation{
+    0%{
+        left: 45%;
+    }
+    50%{
+        left: 55%;
+    }
+    100%{
+        left: 45%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .bomj{
+        background: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        animation: none;
+    }
+}
